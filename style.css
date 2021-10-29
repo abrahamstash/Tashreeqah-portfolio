@@ -9,9 +9,41 @@ color:black;
 }
 .card{
     margin: 10px;
+    width: 18rem;
 }
+#work{width: 18rem;}
+#ava{width: 18rem;}
+#face{width: 18rem;}
+#westend{width: 18rem;}
 
 .headings{
-    padding-top: 200px;
+    padding-top: 200px;}
+
+
+    @media all and (max-width:850px){
+        
+    #work{height: 700px;
+        width: 200px;
+}
+
+#ava{height: 780px;
+    width: 200px;}
+
+#face{height: 700px;
+    width: 200px;}
+
+
+#westend{height: 780px;
+    width: 200px;}
+
+#time{width: 250px; height: 250px; display:flex
+}
+
+#cardss{width: 250px;height: 250px; display:flex }
+
+#testi{width: 250px; height: 250px; display:flex}
+
+#carousel{width: 270px; height: 250px; display:flex };
+   
 
 }
