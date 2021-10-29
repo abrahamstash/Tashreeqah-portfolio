@@ -52,7 +52,11 @@
 <!-- Homepage -->
  <section class="Homepage" id="Homepage" style="height: 100vh;
   width: 100vw; 
-  text-align: left;">
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  ">
 
   <div class="row">
     <div class="col-6">
@@ -87,7 +91,8 @@
   width: 100% ; 
   display: flex;
    flex-direction: column;
-  text-align: center;">
+  text-align: center;
+  justify-content: center;">
 
  <h1 class="headings" style="font-size: 100px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
  color: rgba(3, 243, 243, 0.719);
@@ -105,7 +110,8 @@ style="min-height: 150vh;
  width: 100vw ; 
   text-align: center;
   display: flex;
-   flex-direction: column">
+   flex-direction: column;
+   align-items: center;">
 
 
     <h1 class="headings" style="font-size: 100px; 
@@ -173,7 +179,8 @@ style="min-height: 100vh;
  width: 100vw ;
    text-align: center;
    display: flex;
-   flex-direction: column;">
+   flex-direction: column;
+   align-items: center;">
 
 
     <h1 class="headings" style="font-size: 100px;
@@ -196,23 +203,47 @@ style="min-height: 100vh;
       </div>
 </section>
 
-<!-- Projects -->
+<!-- Projects -->.
 <section class="Projects" id="Projects" 
 style="height: 100vh; 
 width: 100% ;
-   text-align: center;">
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;">
     <h1 class="headings" style="font-size: 100px;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: rgb(3, 243, 243);"
       > Projects</h1>
-    <p></p>
+    <div class="row">
+      <div class="col -6">
+        <img src="./cards.png" alt=""  style=" width:60%; height:90%">
+      </div>
+      <div class="col -6">
+        <img src="./testimonial.png" alt="" style="width: 60%; height: 90%;">
+      </div>
+    </div>
+<div class="row" >
+      <div class="col col-6">
+        <img src="./timeline.png" alt="" style="width: 60%; height: 90%;">
+
+      </div>
+      <div class="col col-6">
+<img src="./carousel.png" alt=""style= "width:60%; height:90%">
+      </div>
+    </div>
 </section>
 
 <!-- Testimonials -->
 <section class="Testimonials" id="Testimonials" 
 style="min-height: 100vh;
  width: 100% ; 
- text-align: center;">
+ text-align: center;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ display: flex;">
     <h1 class="headings" style="font-size: 100px; 
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     color: rgb(3, 243, 243); "
@@ -228,7 +259,7 @@ style="min-height: 100vh;
           </div>
         </div>
       </div>
-vh
+
       <div class="col-4">
         <div class="card" style="width: 18rem;">
           <img src="./david.jpg" class="card-img-top" alt="...">
@@ -267,28 +298,39 @@ width: 100%;
      font-family: Verdana, Geneva, Tahoma, sans-serif; 
      color: rgb(3, 243, 243);"
      > Contact</h1>
- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.069675818386!2d18.4926986!3d-33.9856643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c746d268c8e0ad9!2sLife%20Choices!5e0!3m2!1sen!2sza!4v1635334657219!5m2!1sen!2sza" style="width: 60%; height: 60%;"></iframe>
+     <div class="row">
+      <div class="col-6">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.069675818386!2d18.4926986!3d-33.9856643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c746d268c8e0ad9!2sLife%20Choices!5e0!3m2!1sen!2sza!4v1635334657219!5m2!1sen!2sza" style="width: 60%; height: 100%;"></iframe>
  <form class="form"
  action=""
  method="POST"
 >
-<div>
- <input type="text" id="fname" name="fname" placeholder="Enter first name"><br>
- <input type="text" id="sname" name="sname" placeholder="Enter surname"><br>
- <input type="text" id="email" name="email" placeholder="Enter email"><br>
- <input type="text" id="number" name="phone" placeholder="Enter cellphone number">
+</div>
+<div class="col-6">
+
+<div >
+ <input type="text" id="fname" name="fname" placeholder="Enter first name" style="border: 4px solid blue;"><br>
+ <input type="text" id="sname" name="sname" placeholder="Enter surname" style="border: 4px solid blue;><br>
+ <input type="text" id="email" name="email" placeholder="Enter email" style="border: 4px solid blue;"><br>
+ <input type="text" id="number" name="phone" placeholder="Enter cellphone number" style="border: 4px solid blue;">
 </div>
 <div>
- <textarea name="message" id="messagebox" rows="10" cols="30" placeholder="Enter message"></textarea>
+ <textarea name="message" id="messagebox" rows="10" cols="30" placeholder="Enter message" style="border: 4px solid blue;"></textarea>
 </div><br>
 <!-- your other form fields go here -->
-<button class ="submit" class="send" type="submit">Send</button>
-<button class ="reset"  class="reset" type="reset">Reset</button>
+<button class ="submit" class="send" type="submit" style="border: 4px solid blue;">Send</button>
+<button class ="reset"  class="reset" type="reset" style="border: 4px solid blue;">Reset</button>
 
 </form>
+</div>
+</div>
+
 
 <section>
 
+
+
+  
 
 
 
